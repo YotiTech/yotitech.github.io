@@ -4,76 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YotiTech | My First Website</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #101827;
-            color: white;
-            text-align: center;
-        }
-
-        header {
-            padding: 25px;
-            background: #172338;
-        }
-
-        h1 {
-            color: #38bdf8;
-        }
-
-        main {
-            padding: 80px 20px;
-        }
-
-        p {
-            color: #cbd5e1;
-            font-size: 18px;
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background: #0284c7;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-
-        footer {
-            padding: 20px;
-            color: #94a3b8;
-        }
-    </style>
+    <title>YotiTech | Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
 </head>
-
 <body>
 
-    <header>
-        <h2>YotiTech</h2>
+    <header class="navbar">
+        <a href="index.html" class="logo">Yoti<span>Tech.</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="HTML/about.html">About</a>
+            <a href="#projects">Projects</a>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            ☀
+        </button>
     </header>
 
     <main>
-        <h1>Welcome to YotiTech!</h1>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO MY DIGITAL SPACE</p>
 
-        <p>
-            My first website is finally online.
-        </p>
+                <h1>Building the <span>future</span><br>one line at a time.</h1>
 
-        <p>
-            Technology, Programming and Innovation.
-        </p>
+                <p class="hero-description">
+                    Hey, I'm Yoti. A programmer, technology enthusiast,
+                    and creative thinker exploring the world of code.
+                </p>
 
-        <a href="https://github.com/YotiTech">
-            Visit My GitHub
-        </a>
+                <div class="hero-buttons">
+                    <a href="HTML/about.html" class="btn primary-btn">
+                        Discover Me →
+                    </a>
+                    <a href="#projects" class="btn secondary-btn">
+                        Explore Projects
+                    </a>
+                </div>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Always learning. Always building.
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-card">
+                    <div class="code-header">
+                        <span></span><span></span><span></span>
+                        <small>hello-world.js</small>
+                    </div>
+                    <pre><code><span class="purple">const</span> developer = {
+  name: <span class="green">"Yoti"</span>,
+  passion: <span class="green">"Technology"</span>,
+  skills: [
+    <span class="green">"HTML"</span>,
+    <span class="green">"CSS"</span>,
+    <span class="green">"JavaScript"</span>
+  ],
+  mission: <span class="green">"Keep building"</span>
+};
+
+<span class="blue">console</span>.log(developer);</code></pre>
+                </div>
+                <div class="floating-icon">⌘</div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I'M EXPLORING</p>
+                <h2>My <span>Interests</span></h2>
+                <p>A few things that keep me curious.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="info-card">
+                    <div class="card-icon">⌨</div>
+                    <h3>Programming</h3>
+                    <p>Learning to turn ideas into useful digital experiences.</p>
+                    <a href="HTML/about.html">Learn more ↗</a>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Creating websites with clean code and creative design.</p>
+                    <a href="HTML/about.html">Learn more ↗</a>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Technology</h3>
+                    <p>Exploring new tools, ideas, and technologies.</p>
+                    <a href="HTML/about.html">Learn more ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-banner">
+            <div>
+                <p class="eyebrow">HAVE AN IDEA?</p>
+                <h2>Let's build something <span>interesting.</span></h2>
+            </div>
+            <a href="HTML/about.html" class="btn primary-btn">Get to know me →</a>
+        </section>
     </main>
 
     <footer>
-        © 2026 YotiTech. All rights reserved.
+        <p>© <span id="year"></span> YotiTech. Built with curiosity.</p>
+        <a href="#top" id="backToTop">Back to top ↑</a>
     </footer>
 
 </body>
