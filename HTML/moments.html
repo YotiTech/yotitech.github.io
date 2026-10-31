@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eee6d5">
+  <title>Yoti's Little Universe ✦</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../CSS/gallery.css">
+  <script src="../JS/gallery.js" defer></script>
+</head>
+<body>
+
+  <div class="paper-grain"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- Opening cover -->
+  <main class="intro" id="intro">
+    <div class="intro-top">
+      <a class="back-home" href="../index.html">← Back to YotiTech</a>
+      <span class="issue-number">A PERSONAL COLLECTION · Nº 008</span>
+    </div>
+
+    <section class="envelope-scene">
+      <div class="tiny-star star-a">✳</div>
+      <div class="tiny-star star-b">✧</div>
+      <div class="tiny-star star-c">✦</div>
+
+      <p class="intro-eyebrow">YOU HAVE RECEIVED A LITTLE SOMETHING</p>
+
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="letter">
+          <span class="letter-stamp">✦</span>
+          <p class="letter-small">A NOTE FROM</p>
+          <h1>Yoti's<br><em>Little Universe</em></h1>
+          <p class="letter-note">A few moments, a few memories,<br>and a little bit of magic.</p>
+          <span class="letter-signature">— Yoti ♡</span>
+        </div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+        <div class="wax-seal">Y</div>
+      </div>
+
+      <button class="open-button" id="openBook">
+        <span>Open the universe</span>
+        <span class="button-arrow">↗</span>
+      </button>
+      <p class="intro-hint">Psst... go on. It's yours to explore.</p>
+    </section>
+
+    <div class="intro-bottom">
+      <span>MADE WITH A LITTLE EXTRA IMAGINATION</span>
+      <span>✿ &nbsp; EST. FOREVER</span>
+    </div>
+  </main>
+
+  <!-- Scrapbook -->
+  <div class="book" id="book" aria-hidden="true">
+    <header class="book-header">
+      <a href="../index.html" class="back-home">← YotiTech</a>
+      <div class="header-center">THE MEMORY BOOK <span>✳</span></div>
+      <button class="tiny-button" id="closeBook" aria-label="Return to cover">CLOSE ✕</button>
+    </header>
+
+    <section class="scrapbook">
+      <div class="page-heading">
+        <div class="heading-side">
+          <span class="hand-label">a collection of little things</span>
+          <h2>Beyond the <em>ordinary.</em></h2>
+          <p>Some moments deserve their own little corner of the universe.</p>
+        </div>
+        <div class="heading-stamp">
+          <span>THE</span>
+          <strong>YOTI</strong>
+          <span>COLLECTION</span>
+          <i>✦</i>
+        </div>
+      </div>
+
+      <div class="collage" id="collage">
+
+        <article class="photo-card card-one" data-photo="0" tabindex="0" role="button" aria-label="Open photograph 1">
+          <span class="tape tape-pink"></span>
+          <div class="photo-frame">
+            <img src="../Resources/1.jpg" alt="Memory photograph 1">
+            <span class="photo-number">01</span>
+          </div>
+          <div class="card-caption">
+            <span class="caption-title">A little moment</span>
+            <span class="caption-sub">one for the books ✦</span>
+          </div>
+        </article>
+
+        <article class="photo-card card-two" data-photo="1" tabindex="0" role="button" aria-label="Open photograph 2">
+          <span class="tape tape-yellow"></span>
+          <div class="photo-frame">
+            <img src="../Resources/2.jpg" alt="Memory photograph 2">
+            <span class="photo-number">02</span>
+          </div>
+          <div class="card-caption">
+            <span class="caption-title">Somewhere in time</span>
+            <span class="caption-sub">a good kind of chaos</span>
+          </div>
+        </article>
+
+        <article class="photo-card card-three" data-photo="2" tabindex="0" role="button" aria-label="Open photograph 3">
+          <span class="tape tape-blue"></span>
+          <div class="photo-frame">
+            <img src="../Resources/3.jpg" alt="Memory photograph 3">
+            <span class="photo-number">03</span>
+          </div>
+          <div class="card-caption">
+            <span class="caption-title">The little things</span>
+            <span class="caption-sub">worth remembering ♡</span>
+          </div>
+        </article>
+
+        <article class="photo-card card-four" data-photo="3" tabindex="0" role="button" aria-label="Open photograph 4">
+          <span class="tape tape-green"></span>
+          <div class="photo-frame">
+            <img src="../Resources/4.jpg" alt="Memory photograph 4">
+            <span class="photo-number">04</span>
+          </div>
+          <div class="card-caption">
+            <span class="caption-title">A page of its own</span>
+            <span class="caption-sub">no explanation needed</span>
+          </div>
+        </article>
+
+        <article class="photo-card card-five" data-photo="4" tabindex="0" role="button" aria-label="Open photograph 5">
+          <span class="tape tape-orange"></span>
+          <div class="photo-frame">
+            <img src="../Resources/5.jpg" alt="Memory photograph 5">
+            <span class="photo-number">05</span>
+          </div>
+          <div class="card-caption">
+            <span class="caption-title">Collected moments</span>
+            <span class="caption-sub">a tiny piece of forever</span>
+          </div>
+        </article>
+
+        <article class="photo-card card-six" data-photo="5" tabindex="0" role="button" aria-label="Open photograph 6">
+          <span class="tape tape-lilac"></span>
+          <div class="photo-frame">
+            <img src="../Resources/6.jpg" alt="Memory photograph 6">
+            <span class="photo-number">06</span>
+          </div>
+          <div class="card-caption">
+            <span class="caption-title">Just being here</span>
+            <span class="caption-sub">and that's enough ✿</span>
+          </div>
+        </article>
+
+        <article class="photo-card card-seven" data-photo="6" tabindex="0" role="button" aria-label="Open photograph 7">
+          <span class="tape tape-pink"></span>
+          <div class="photo-frame">
+            <img src="../Resources/7.jpg" alt="Memory photograph 7">
+            <span class="photo-number">07</span>
+          </div>
+          <div class="card-caption">
+            <span class="caption-title">Another little story</span>
+            <span class="caption-sub">to keep close</span>
+          </div>
+        </article>
+
+        <article class="photo-card card-eight" data-photo="7" tabindex="0" role="button" aria-label="Open photograph 8">
+          <span class="tape tape-yellow"></span>
+          <div class="photo-frame">
+            <img src="../Resources/8.jpg" alt="Memory photograph 8">
+            <span class="photo-number">08</span>
+          </div>
+          <div class="card-caption">
+            <span class="caption-title">And the story goes on</span>
+            <span class="caption-sub">to be continued...</span>
+          </div>
+        </article>
+
+        <!-- Paper decorations -->
+        <div class="paper-note note-one">
+          <span class="note-pin">✦</span>
+          <p>Life lately:</p>
+          <strong>collecting moments,<br>not things.</strong>
+          <span class="note-smile">♡</span>
+        </div>
+
+        <div class="paper-note note-two">
+          <span class="note-date">A REMINDER</span>
+          <p>Don't forget to<br>enjoy the little<br>things.</p>
+          <span class="note-doodle">✿</span>
+        </div>
+
+        <div class="doodle doodle-one">✳</div>
+        <div class="doodle doodle-two">♡</div>
+        <div class="doodle doodle-three">✧</div>
+        <div class="doodle doodle-four">〰</div>
+        <div class="scribble">good days<br>good memories</div>
+
+        <button class="surprise-sticker" id="surpriseButton">
+          <span>✿</span>
+          <small>tap for<br>a surprise</small>
+        </button>
+      </div>
+
+      <footer class="book-footer">
+        <span>THIS LITTLE UNIVERSE BELONGS TO YOTI</span>
+        <span class="footer-heart">MADE OF MEMORIES &nbsp; ♡</span>
+        <span id="year"></span>
+      </footer>
+    </section>
+  </div>
+
+  <!-- Fullscreen photo viewer -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">✕</button>
+    <button class="lightbox-arrow previous" id="previousPhoto" aria-label="Previous photo">←</button>
+
+    <div class="lightbox-content">
+      <div class="lightbox-paper">
+        <div class="lightbox-photo-wrap">
+          <img id="lightboxImage" src="" alt="Selected memory">
+        </div>
+        <div class="lightbox-caption">
+          <span id="lightboxNumber">01 / 08</span>
+          <p id="lightboxTitle">A little moment</p>
+          <span class="lightbox-decoration">✦</span>
+        </div>
+      </div>
+      <p class="lightbox-hint">USE ← → TO EXPLORE &nbsp; · &nbsp; ESC TO CLOSE</p>
+    </div>
+
+    <button class="lightbox-arrow next" id="nextPhoto" aria-label="Next photo">→</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
